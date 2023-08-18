@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div id="findMusic">
+
+        <span>Welcome, <span id="username"></span></span>
+        <div>
+            <input id="search" type="search" placeholder="search">
+            <button id="searchBtn">search</button>
+        </div>
+        <button id="logoutBtn">Logout</button>
+
+    </div>
+
+
+    <table id="playlist"></table>
+
+    <h2>Playlist</h2>
+
+    <h3 id="playListInfo" style="visibility: visible;">No song in your play list</h3>
+
+    <table id="favorites" style="visibility: hidden;">
+        <tr>
+            <th>Favorites Song</th>
+            <th>remove from list</th>
+            <th>play</th>
+        </tr>
+    </table>
+
+    <marquee id="musicTitle"></marquee>
+
+    <audio controls autoplay id="play"></audio>
+
+    <div id="players">
+        <button id="priv"><img src="prev.png" alt="" width="50px"></button>
+        <button id="next"><img src="next.png" alt="" width="50px"></button>
+
+        <button id="repeat" style="display:none;"><img src="repete.png" alt="" width="50px"></button>
+        <button id="shuffle"><img src="shuffle.png" alt="" width="50px"></button>
+    </div>
+</body>
+
+<script src="./welcome.js"></script>
+
+</html>
